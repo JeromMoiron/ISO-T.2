@@ -1,6 +1,7 @@
-nmcli con mod "Wired connection 1" ipv4.addresses 172.16.206.109/16
-nmcli con mod "Wired connection 1" ipv4.gateway 172.16.0.58
-nmcli con mod "Wired connection 1" ipv4.dns 172.16.0.58
+#!/bin/bash
+nmcli con mod "Wired connection 1" ipv4.addresses <ip>/<mask> #Aquí se pondría la dirección Ip que se necesite
+nmcli con mod "Wired connection 1" ipv4.gateway <ip_puerta_enlace> 
+nmcli con mod "Wired connection 1" ipv4.dns <ip_servidor_dns> 
 nmcli con mod "Wired connection 1" ipv4.method manual
 nmcli con up "Wired connection 1"
 ip -c a
