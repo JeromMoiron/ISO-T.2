@@ -1,6 +1,6 @@
 @echo off
 
-REM santiago marino fernandez, marfersan
+REM moitrijer MoironTrigo,Jerom
 echo Selecciona la opcion deseada.
 
 :menu
